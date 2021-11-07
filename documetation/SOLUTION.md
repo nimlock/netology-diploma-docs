@@ -128,7 +128,7 @@ until kubectl get servicemonitors --all-namespaces ; do date; sleep 1; echo ""; 
 kubectl create -f manifests/
 ```
 
-В итоге нужные компоненты были установлены.
+В итоге, нужные компоненты были установлены.
 
 Реквизиты доступа к Grafana:
 - URL: [http://grafana.diplom.ivanadminekb.ru/](http://grafana.diplom.ivanadminekb.ru/)
@@ -172,6 +172,6 @@ echo -n '${шифротекст_из_конфига_kubectl}' | base64 -d
 ![](Screenshot_TFC_1.png)  
 ![](Screenshot_TFC_2.png)
 3. [Репозиторий с конфигурацией ansible](https://github.com/nimlock/netology-diploma-ansible/tree/main/kubespray), если был выбран способ создания Kubernetes кластера при помощи ansible.
-4. [Репозиторий с Dockerfile тестового приложения](https://gitlab.com/nimlock-netology/netology-diploma-app/-/tree/main) и [ссылка на собранный docker image](registry.gitlab.com/nimlock-netology/netology-diploma-app:main-ec0132c0).
+4. [Репозиторий с Dockerfile тестового приложения](https://gitlab.com/nimlock-netology/netology-diploma-app/-/tree/main) и ссылка на собранный docker image ( `registry.gitlab.com/nimlock-netology/netology-diploma-app:main-ec0132c0` ).
 5. [Репозиторий с конфигурацией Kubernetes кластера](https://github.com/nimlock/netology-diploma-k8sConfig/tree/main/manifests).
 6. [Ссылка на тестовое приложение](http://app.diplom.ivanadminekb.ru/) и [веб интерфейс Grafana](http://grafana.diplom.ivanadminekb.ru/) с данными доступа (`admin` / `Netology-admin`).
